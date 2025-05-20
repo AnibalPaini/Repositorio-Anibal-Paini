@@ -1,3 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+    --font-primary: "Roboto Slab", serif;
+    --font-weight-bold:900;
+    --font-weight-medium:600;
+    --font-weight-normal:400;
+}
+
+body{
+    font-family: var(--primary-font);
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}

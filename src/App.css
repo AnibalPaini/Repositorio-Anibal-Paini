@@ -1,0 +1,248 @@
+:root {
+    --font-primary: "Roboto Slab", serif;
+    --font-weight-bold:900;
+    --font-weight-medium:600;
+    --font-weight-normal:400;
+
+    --bg-dark-gray: #1c1c1e;
+    --bg-dark-gray-2: #202020;
+    --color-primary: #5bfcff;     /* Celeste neón principal */
+    --color-cyan-light: #a4ffff;  /* Muy claro, casi blanco celeste */
+    --color-cyan-medium: #54e3f0; /* Más suave que el principal */
+    --color-cyan-dark: #3acdd3;   /* Tirando a turquesa */
+    --color-cyan-deep: #1aa6ab;   /* Celeste profundo, ideal para hover */
+    --color-cyan-muted: #87cfd0;  /* Desaturado, para fondos o bordes */
+}
+
+body{
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight-normal);
+    background: var(--bg-dark-gray);
+    margin: 0;
+    padding: 0;
+}
+
+.m-0{
+    margin: 0;
+}
+
+.p-0{
+    padding: 0;
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+/* HEADER */
+.aside {
+    max-width: 8rem;
+    height: 100vh;
+    border-right: 1px solid var(--color-cyan-muted);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--bg-dark-gray-2); 
+    z-index: 1000;
+    transition: width 0.3s ease-in-out;
+}
+
+.logo-aside{
+    color: var(--color-primary);
+    font-size: 2rem;
+    transition: scale 0.3s ease-in-out;
+    @starting-style{
+        scale: 0;
+    }
+}
+
+.nav{
+    padding: 2rem;
+    transition: scale 0.3s ease-in-out;
+    @starting-style{
+        scale: 0;
+    }
+}
+
+.nav .nav-link{
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    right: -50px;
+    bottom: 50%;
+    border: 2px solid var(--color-cyan-muted);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.menu .menu-line{
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+.menu:hover{
+    border: 2px solid var(--color-cyan-deep);
+}
+
+.menu:hover .menu-line{
+    background-color: var(--color-cyan-deep);
+}
+
+
+/* MENU HAMBURGUESA */
+.aside--abierto {
+  width: 8rem;
+}
+
+.aside--cerrado {
+  width: 1rem;
+}
+
+.aside--cerrado .logo-aside{
+    transition: scale .2s esae;
+    scale: 0;
+}
+.aside--cerrado .nav{
+    transition: scale 0.5s esae;
+    scale: 0;
+}
+
+/* Templete */
+.templete{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+  
+
+/* Inicio */
+.section-inicio {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; 
+    gap: 2rem;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.inicio h1{
+    color: var(--color-cyan-medium);
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.inicio p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  width: 0;
+  animation: escritura-inicio 3s steps(20) infinite alternate,
+             blink 0.7s step-end infinite;
+  margin: 0;
+}
+
+@keyframes escritura-inicio {
+    from{width: 0;}
+    to {width: 21ch;}
+}
+@keyframes blink {
+    50%{border-color: transparent;}
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%; /* Hace la imagen redonda */
+  border: 4px solid var(--color-primary); /* Opcional: borde con tu color principal */
+}
+
+.scroll{
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #fff;
+    animation-name: scroll-rebote;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes scroll-rebote {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
