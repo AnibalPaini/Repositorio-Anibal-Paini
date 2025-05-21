@@ -10,7 +10,7 @@ const ProyectosContainer = () => {
           titulo="PODA-WEB"
           img="/img/PODA-WEB-IMG.png"
           logos={["react", "node", "express", "mongodb", "tailwind"]}
-          githubUrl="https://github.com/AnibalPaini/PODA-WEB"
+          githubUrl="https://github.com/AnibalPaini/PODA-WEB-public"
         />
         <Proyecto
           titulo="Ecommerce"
