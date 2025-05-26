@@ -32,6 +32,11 @@ const ProyectosContainer = () => {
           img="/img/blog-cafe.png"
           logos={["html", "css"]}
         />
+        <Proyecto
+          titulo="CanchasYa (des.)"
+          img="/img/blog-cafe.png"
+          logos={["react", "node", "express", "mongodb", "tailwind"]}
+        />
       </div>
     </section>
   );

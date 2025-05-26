@@ -314,7 +314,65 @@ body{
   opacity: 1;
 } 
 
+/* Sobre Mi */
+.section-sobreMi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+  height: 100vh;
+}
 
+.grid-sobreMi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1200px;
+  width: 100%;
+  gap: 4rem;
+  padding: 4rem 2rem;
+  background-color: #121212;
+}
+
+/* Texto */
+.sobreMi-texto h2,
+.sobreMi-tecnologias h2 {
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sobreMi-texto p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+  font-family: var(--font-secondary);
+}
+
+/* Tecnologías */
+.sobreMi-tecnologias {
+  text-align: start;
+}
+
+.iconos-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.iconos-tecnologias i {
+  font-size: 3rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.iconos-tecnologias i:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
 
 
 
