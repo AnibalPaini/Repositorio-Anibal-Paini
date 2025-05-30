@@ -12,15 +12,22 @@ const Header = () => {
       className={`aside ${mostrarMenu ? "aside--abierto" : "aside--cerrado"}`}
     >
       <p className="logo-aside">A.P</p>
+
       <nav className="nav">
         <p className="nav-link">
-          <i className="bi bi-linkedin"></i>
+          <a href="https://www.linkedin.com/in/anibal-paini-0226152b6/" target="_blank">
+            <i className="bi bi-linkedin"></i>
+          </a>
         </p>
         <p className="nav-link">
-          <i className="bi bi-github"></i>
+          <a href="https://github.com/AnibalPaini" target="_blank">
+            <i className="bi bi-github"></i>
+          </a>
         </p>
         <p className="nav-link">
-          <i className="bi bi-envelope-fill"></i>
+          <a href="mailto:anibalpaini01@gmail.com" target="_blank">
+            <i className="bi bi-envelope-fill"></i>
+          </a>
         </p>
       </nav>
       <div className="menu" onClick={handdleToggleMenu}>

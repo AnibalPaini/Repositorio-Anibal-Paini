@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import "./estrellado.css";
 
-const Estrellado = ({ starCount = 500 }) => {
+const Estrellado = ({ starCount = 300 }) => {
   const skyRef = useRef(null);
 
   useEffect(() => {
