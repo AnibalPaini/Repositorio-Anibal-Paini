@@ -4,6 +4,7 @@ import Estrellado from "../Estrellado/Estrellado.jsx";
 import ProyectosContainer from "../ProyectosContainer/ProyectosContainer.jsx";
 import SobreMi from "../SobreMi/SobreMi.jsx";
 import Certificados from "../Certificados/Certificados.jsx";
+import Form from "../Form/Form.jsx";
 
 const Templete = () => {
   return (
@@ -13,6 +14,7 @@ const Templete = () => {
       <ProyectosContainer />
       <SobreMi/>
       <Certificados/>
+      <Form/>
     </main>
   );
 };
