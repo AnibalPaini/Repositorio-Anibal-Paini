@@ -14,13 +14,13 @@ const Header = () => {
       <p className="logo-aside">A.P</p>
       <nav className="nav">
         <p className="nav-link">
-          <i class="bi bi-linkedin"></i>
+          <i className="bi bi-linkedin"></i>
         </p>
         <p className="nav-link">
-          <i class="bi bi-github"></i>
+          <i className="bi bi-github"></i>
         </p>
         <p className="nav-link">
-          <i class="bi bi-envelope-fill"></i>
+          <i className="bi bi-envelope-fill"></i>
         </p>
       </nav>
       <div className="menu" onClick={handdleToggleMenu}>

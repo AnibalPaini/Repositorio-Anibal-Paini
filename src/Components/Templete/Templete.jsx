@@ -9,7 +9,6 @@ import Form from "../Form/Form.jsx";
 const Templete = () => {
   return (
     <main className="templete">
-      <Estrellado />
       <Inicio />
       <ProyectosContainer />
       <SobreMi/>

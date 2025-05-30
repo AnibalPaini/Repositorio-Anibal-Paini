@@ -17,7 +17,7 @@ const Inicio = () => {
         </div>
       </div>
       <div className="scroll">
-        <i class="bi bi-caret-down"></i>
+        <i className="bi bi-caret-down"></i>
       </div>
     </section>
   );
