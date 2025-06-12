@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const Proyecto = ({ titulo, img, logos = [], githubUrl }) => {
+const Proyecto = ({
+  titulo,
+  img,
+  logos = [],
+  githubUrl,
+  descripcion,
+  urlProduccion,
+}) => {
   const listLogos = {
     react: "devicon-react-original-wordmark colored",
     node: "devicon-nodejs-plain-wordmark colored",
@@ -14,21 +22,18 @@ const Proyecto = ({ titulo, img, logos = [], githubUrl }) => {
     jwt: "",
     github: "devicon-github-original-wordmark",
   };
+
   return (
     <div className="proyecto">
       <p>{titulo}</p>
-      <div className="imagen-proyecto">
-        <img src={img} alt="Proyecto Poda Web" />
-        <div className="overlay">
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className={listLogos.github}></i>
-          </a>
+      <Link
+        state={{ titulo, img, logos, githubUrl, descripcion, urlProduccion }}
+        to={"/proyecto-detail"}
+      >
+        <div className="imagen-proyecto">
+          <img src={img[0]} alt="Proyecto Poda Web" />
         </div>
-      </div>
+      </Link>
       <div className="logos">
         {logos.map((logoKey) => {
           const className = listLogos[logoKey];

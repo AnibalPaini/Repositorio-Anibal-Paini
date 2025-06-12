@@ -5,7 +5,7 @@ const Inicio = () => {
     <section className="section-inicio">
       <div className="inicio">
         <div>
-          <h1>Anibal Eduardo Paini</h1>
+          <h1>Anibal Eduardo Paini (En desarrollo...)</h1>
           <p>Full Stack Developer</p>
         </div>
         <div>

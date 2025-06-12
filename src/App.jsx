@@ -1,16 +1,16 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
-import Inicio from "./Components/Inicio/Inicio";
-import Templete from "./Components/Templete/Templete";
 import Estrellado from "./Components/Estrellado/Estrellado";
+import Rutas from "./Components/Rutas/Rutas";
+import {BrowserRouter} from "react-router-dom"
 function App() {
-
-
   return (
     <>
-      <Estrellado />
-      <Header/>
-      <Templete/>
+      <BrowserRouter>
+        <Header/>
+        <Estrellado/>
+        <Rutas/>
+      </BrowserRouter>
     </>
   );
 }
