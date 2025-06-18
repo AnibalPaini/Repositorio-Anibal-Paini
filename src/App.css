@@ -719,11 +719,19 @@ textarea {
 }
 
 .proyecto-detail-desc {
-  font-size: 1.2rem;
-  font-weight: var(--font-weight-normal);
-  line-height: 1.6;
-  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.05); 
+  border-left: 4px solid var(--color-cyan-medium); 
+  font-family: 'Inter', sans-serif;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
 
 .botones-link{
   display: flex;

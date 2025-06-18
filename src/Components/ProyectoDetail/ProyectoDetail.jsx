@@ -122,6 +122,8 @@ const ProyectoDetail = () => {
                 Ver proyecto
               </a>
             )}
+
+            
           </div>
         </div>
       </section>

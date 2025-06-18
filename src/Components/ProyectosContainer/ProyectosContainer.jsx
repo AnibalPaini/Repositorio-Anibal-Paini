@@ -2,7 +2,7 @@ import React from "react";
 import Proyecto from "../Proyecto/Proyecto";
 
 const ProyectosContainer = () => {
-  const imgPoda=[
+  const imgPoda = [
     "/img/PODA-WEB/1.jpeg",
     "/img/PODA-WEB/2.jpeg",
     "/img/PODA-WEB/3.jpeg",
@@ -13,7 +13,22 @@ const ProyectosContainer = () => {
     "/img/PODA-WEB/8.jpeg",
     "/img/PODA-WEB/9.jpeg",
     "/img/PODA-WEB/10.png",
-  ]
+  ];
+
+  const imgCanchasYa = [
+    "/img/CanchasYa/image2.png",
+    "/img/CanchasYa/image3.png",
+    "/img/CanchasYa/image4.png",
+    "/img/CanchasYa/image5.png",
+    "/img/CanchasYa/image6.png",
+    "/img/CanchasYa/image7.png",
+    "/img/CanchasYa/image8.png",
+    "/img/CanchasYa/image9.png",
+    "/img/CanchasYa/image10.png",
+    "/img/CanchasYa/image.png",
+    "/img/CanchasYa/image1.png",
+  ];
+
   return (
     <section className="section-proyectos" id="proyectos">
       <h2>MIS PROYECTOS</h2>
@@ -30,11 +45,12 @@ En la aplicación se definen cuatro roles de usuario: user, espacios-verdes, ide
           urlProduccion="https://espaciosverdesdigital.santarosa.gob.ar/"
         />
         <Proyecto
-          titulo="CanchasYa (prox.)"
-          img="/img/blog-cafe.png"
+          titulo="CanchasYa"
+          img={imgCanchasYa}
           descripcion="CanchasYa surge como un proyecto personal con el fin de terminar con la problemática que sufren la gran mayoría de complejos deportivos: la falta de un sistema automatizado para la reserva de turnos.
 El sistema se basa en que los complejos deportivos se adhieran al sistema, en donde cada complejo definirá sus usuarios administradores y podrán registrar sus canchas y turnos. Mediante el sistema los clientes podrán visualizar todos los complejos, las canchas de cada complejo, seleccionar la cancha y tomar un turno que esté disponible, además se podrá pagar la totalidad del turno o una seña y deberá pagarse el total una vez en el establecimiento o según las condiciones del complejo.
 Así CanchasYa busca digitalizar y simplificar la gestión de reservas deportivas, beneficiando tanto a administradores de complejos y a sus clientes.
+Proyecto actualmente en desarrollo, el repositorio es privado.
 "
           logos={["react", "node", "express", "mongodb", "tailwind"]}
         />

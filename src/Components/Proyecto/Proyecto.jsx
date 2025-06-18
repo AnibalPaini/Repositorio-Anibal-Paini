@@ -31,7 +31,7 @@ const Proyecto = ({
         to={"/proyecto-detail"}
       >
         <div className="imagen-proyecto">
-          <img src={img[0]} alt="Proyecto Poda Web" />
+          <img src={img[0]} alt={titulo} />
         </div>
       </Link>
       <div className="logos">
