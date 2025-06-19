@@ -692,13 +692,15 @@ textarea {
   border-radius: 10px;
   color: #fff;
   box-shadow: 0 0 10px rgba(26, 166, 171, 0.3);
+  width: 45rem;
 }
 
 .proyecto-detail-container h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #61dafb; /* React Blue */
+  color: var(--color-cyan-medium); 
   text-align: center;
+  font-family: var(--font-secondary);
 }
 
 .proyecto-detail-logos {
@@ -814,6 +816,12 @@ textarea {
   cursor: pointer;
   z-index: 1;
   padding: 0.5rem 1rem;
+  transition: .2s;
+}
+
+.carousel-button:hover{
+  font-size: 2.2rem;
+  color: var(--color-cyan-muted);
 }
 
 .carousel-button.prev {

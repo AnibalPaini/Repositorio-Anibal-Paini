@@ -50,10 +50,7 @@ const ProyectoDetail = () => {
       <section className="section-proyecto-detail">
         <div className="proyecto-detail-container">
           <div>
-            <p
-              className="flecha-volver"
-              onClick={handleVolver}
-            >
+            <p className="flecha-volver" onClick={handleVolver}>
               ←
             </p>
           </div>
@@ -89,6 +86,8 @@ const ProyectoDetail = () => {
             </div>
           </div>
 
+          <p className="proyecto-detail-desc">{descripcion}</p>
+
           <div className="proyecto-detail-logos">
             {logos?.map((logoKey) => {
               const className = listLogos[logoKey];
@@ -97,8 +96,6 @@ const ProyectoDetail = () => {
               ) : null;
             })}
           </div>
-
-          <p className="proyecto-detail-desc">{descripcion}</p>
 
           <div className="botones-link">
             {githubUrl && (
@@ -122,8 +119,6 @@ const ProyectoDetail = () => {
                 Ver proyecto
               </a>
             )}
-
-            
           </div>
         </div>
       </section>
