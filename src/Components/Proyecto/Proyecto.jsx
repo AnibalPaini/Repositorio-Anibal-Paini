@@ -21,6 +21,7 @@ const Proyecto = ({
     tailwind: "devicon-tailwindcss-original colored",
     jwt: "",
     github: "devicon-github-original-wordmark",
+    socketio:"devicon-socketio-original socketio-icon"
   };
 
   return (
@@ -37,7 +38,7 @@ const Proyecto = ({
       <div className="logos">
         {logos.map((logoKey) => {
           const className = listLogos[logoKey];
-          return className ? <i key={logoKey} className={className}></i> : null;
+          return className ? <i key={logoKey} className={className} title={logoKey}></i> : null;
         })}
       </div>
     </div>

@@ -29,6 +29,8 @@ const ProyectosContainer = () => {
     "/img/CanchasYa/image1.png",
   ];
 
+  const imgClonKuma = ["/img/CLON-KUMA/1.png"];
+
   return (
     <section className="section-proyectos" id="proyectos">
       <h2>MIS PROYECTOS</h2>
@@ -36,10 +38,11 @@ const ProyectosContainer = () => {
         <Proyecto
           titulo="PODA-WEB"
           img={imgPoda}
-          descripcion="PODA-WEB es un sistema web creado con el stack MERN. Fue desarrollado con la intención de digitalizar el trámite de poda particular de la Municipalidad de Santa Rosa, donde actualmente trabajo.
-Se utilizan tecnologías como MERN, JWT, Mongoose, Multer, Nodemailer, Node-Cron, pg, entre otras.
-
-En la aplicación se definen cuatro roles de usuario: user, espacios-verdes, ide y admin. El usuario (user) carga las solicitudes, espacios-verdes las gestiona, ide tiene acceso a estos datos y admin administra los usuarios y los demás módulos de la app."
+          descripcion={[
+            "PODA-WEB es un sistema web creado con el stack MERN. Fue desarrollado con la intención de digitalizar el trámite de poda particular de la Municipalidad de Santa Rosa, donde actualmente trabajo.",
+            "Se utilizan tecnologías como MERN, JWT, Mongoose, Multer, Nodemailer, Node-Cron, pg, entre otras.",
+            "En la aplicación se definen cuatro roles de usuario: user, espacios-verdes, ide y admin. El usuario (user) carga las solicitudes, espacios-verdes las gestiona, ide tiene acceso a estos datos y admin administra los usuarios y los demás módulos de la app.",
+          ]}
           logos={["react", "node", "express", "mongodb", "tailwind"]}
           githubUrl="https://github.com/AnibalPaini/PODA-WEB-public"
           urlProduccion="https://espaciosverdesdigital.santarosa.gob.ar/"
@@ -47,17 +50,34 @@ En la aplicación se definen cuatro roles de usuario: user, espacios-verdes, ide
         <Proyecto
           titulo="CanchasYa"
           img={imgCanchasYa}
-          descripcion="CanchasYa surge como un proyecto personal con el fin de terminar con la problemática que sufren la gran mayoría de complejos deportivos: la falta de un sistema automatizado para la reserva de turnos.
-El sistema se basa en que los complejos deportivos se adhieran al sistema, en donde cada complejo definirá sus usuarios administradores y podrán registrar sus canchas y turnos. Mediante el sistema los clientes podrán visualizar todos los complejos, las canchas de cada complejo, seleccionar la cancha y tomar un turno que esté disponible, además se podrá pagar la totalidad del turno o una seña y deberá pagarse el total una vez en el establecimiento o según las condiciones del complejo.
-Así CanchasYa busca digitalizar y simplificar la gestión de reservas deportivas, beneficiando tanto a administradores de complejos y a sus clientes.
-Proyecto actualmente en desarrollo, el repositorio es privado.
-"
+          descripcion={[
+            "CanchasYa surge como un proyecto personal con el objetivo de resolver una problemática común en los complejos deportivos: la falta de un sistema automatizado para la reserva de turnos.",
+            "La plataforma permite que los complejos deportivos se adhieran al sistema, donde podrán registrar sus canchas, definir sus administradores y gestionar sus turnos. A su vez, los usuarios podrán visualizar todos los complejos registrados, consultar la disponibilidad de canchas, y reservar turnos de manera sencilla.",
+            "El sistema también incluye una funcionalidad de pagos: los clientes pueden abonar la totalidad del turno o dejar una seña, completando el pago restante en el establecimiento, según las políticas de cada complejo.",
+            "CanchasYa busca digitalizar y simplificar la gestión de reservas deportivas, generando beneficios tanto para los administradores como para los clientes.",
+            "Este proyecto se encuentra actualmente en desarrollo. El repositorio es privado.",
+          ]}
           logos={["react", "node", "express", "mongodb", "tailwind"]}
         />
         <Proyecto
-          titulo="Ecommerce"
-          img="/img/coder-back-2.png"
-          logos={["react", "node", "express", "mongodb", "bootstrap"]}
+          titulo="CLON - Uptime Kuma"
+          img={imgClonKuma}
+          descripcion={[
+            "Monitor de Dispositivos (Clon de Uptime Kuma)",
+            "Este proyecto es una aplicación full stack desarrollada con React, Node.js, Tailwind CSS, MongoDB y Socket.IO. Funciona como un sistema de monitoreo en tiempo real de dispositivos, inspirado en Uptime Kuma.",
+            "El sistema permite agregar dispositivos para ser monitoreados mediante pings periódicos, utilizando la librería ping de Node.js. El backend evalúa el estado de cada dispositivo (activo o inactivo) y, mediante Socket.IO, emite eventos que son escuchados por el frontend para reflejar los cambios en tiempo real sin necesidad de recargar la página.",
+            "Además, la interfaz está diseñada con Tailwind CSS, asegurando una experiencia visual moderna, responsiva y clara para el usuario.",
+            "Actualmente se encuentra en desarrollo."
+          ]}
+          logos={[
+            "react",
+            "node",
+            "express",
+            "mongodb",
+            "tailwind",
+            "socketio",
+          ]}
+          githubUrl="https://github.com/AnibalPaini/CLON-KUMA"
         />
         <Proyecto
           titulo="Materos"

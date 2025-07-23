@@ -36,6 +36,7 @@ const SobreMi = () => {
             <i className="devicon-tailwindcss-original colored" title="Tailwindcss"></i>
             <i class="devicon-github-original" title="GitHub"></i>
             <i class="devicon-git-plain colored" title="Git"></i>
+            <i className="devicon-socketio-original socketio-icon" title="Socket.io"></i>
           </div>
         </div>
       </div>

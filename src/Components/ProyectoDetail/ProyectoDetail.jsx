@@ -19,6 +19,7 @@ const ProyectoDetail = () => {
     tailwind: "devicon-tailwindcss-original colored",
     jwt: "",
     github: "devicon-github-original-wordmark",
+    socketio: "devicon-socketio-original socketio-icon",
   };
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -86,7 +87,17 @@ const ProyectoDetail = () => {
             </div>
           </div>
 
-          <p className="proyecto-detail-desc">{descripcion}</p>
+          <div className="proyecto-detail-desc">
+            {Array.isArray(descripcion) ? (
+              descripcion.map((parrafo, index) => (
+                <p key={index} className="mb-3">
+                  {parrafo}
+                </p>
+              ))
+            ) : (
+              <p>{descripcion}</p>
+            )}
+          </div>
 
           <div className="proyecto-detail-logos">
             {logos?.map((logoKey) => {
