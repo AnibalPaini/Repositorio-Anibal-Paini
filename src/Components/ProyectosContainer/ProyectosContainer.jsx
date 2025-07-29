@@ -29,7 +29,7 @@ const ProyectosContainer = () => {
     "/img/CanchasYa/image1.png",
   ];
 
-  const imgClonKuma = ["/img/CLON-KUMA/1.png"];
+  const imgClonKuma = ["/img/CLON-KUMA/1.png", "/img/CLON-KUMA/2.png", "/img/CLON-KUMA/3.png", "/img/CLON-KUMA/4.png"];
 
   return (
     <section className="section-proyectos" id="proyectos">
