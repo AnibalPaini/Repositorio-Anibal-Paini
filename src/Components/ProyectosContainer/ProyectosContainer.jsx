@@ -29,7 +29,16 @@ const ProyectosContainer = () => {
     "/img/CanchasYa/image1.png",
   ];
 
-  const imgClonKuma = ["/img/CLON-KUMA/1.png", "/img/CLON-KUMA/2.png", "/img/CLON-KUMA/3.png", "/img/CLON-KUMA/4.png"];
+  const imgClonKuma = [
+    "/img/CLON-KUMA/1.jpeg",
+    "/img/CLON-KUMA/2.jpeg",
+    "/img/CLON-KUMA/3.jpeg",
+    "/img/CLON-KUMA/4.jpeg",
+    "/img/CLON-KUMA/5.jpeg",
+    "/img/CLON-KUMA/6.jpeg",
+    "/img/CLON-KUMA/7.jpeg",
+    "/img/CLON-KUMA/8.jpeg",
+  ];
 
   return (
     <section className="section-proyectos" id="proyectos">
@@ -39,9 +48,10 @@ const ProyectosContainer = () => {
           titulo="PODA-WEB"
           img={imgPoda}
           descripcion={[
-            "PODA-WEB es un sistema web creado con el stack MERN. Fue desarrollado con la intención de digitalizar el trámite de poda particular de la Municipalidad de Santa Rosa, donde actualmente trabajo.",
+            "PODA-WEB es un sistema web creado con el stack MERN. Fue desarrollado con la intención de digitalizar el trámite de poda particular de la Municipalidad de Santa Rosa.",
             "Se utilizan tecnologías como MERN, JWT, Mongoose, Multer, Nodemailer, Node-Cron, pg, entre otras.",
             "En la aplicación se definen cuatro roles de usuario: user, espacios-verdes, ide y admin. El usuario (user) carga las solicitudes, espacios-verdes las gestiona, ide tiene acceso a estos datos y admin administra los usuarios y los demás módulos de la app.",
+            "Actualmente no se está utilizando.",
           ]}
           logos={["react", "node", "express", "mongodb", "tailwind"]}
           githubUrl="https://github.com/AnibalPaini/PODA-WEB-public"
@@ -60,14 +70,15 @@ const ProyectosContainer = () => {
           logos={["react", "node", "express", "mongodb", "tailwind"]}
         />
         <Proyecto
-          titulo="CLON - Uptime Kuma"
+          titulo="Ping Status"
           img={imgClonKuma}
           descripcion={[
-            "Monitor de Dispositivos (Clon de Uptime Kuma)",
+            "Monitor de Dispositivos",
             "Este proyecto es una aplicación full stack desarrollada con React, Node.js, Tailwind CSS, MongoDB y Socket.IO. Funciona como un sistema de monitoreo en tiempo real de dispositivos, inspirado en Uptime Kuma.",
             "El sistema permite agregar dispositivos para ser monitoreados mediante pings periódicos, utilizando la librería ping de Node.js. El backend evalúa el estado de cada dispositivo (activo o inactivo) y, mediante Socket.IO, emite eventos que son escuchados por el frontend para reflejar los cambios en tiempo real sin necesidad de recargar la página.",
             "Además, la interfaz está diseñada con Tailwind CSS, asegurando una experiencia visual moderna, responsiva y clara para el usuario.",
-            "Actualmente se encuentra en desarrollo."
+            "El host Render no permite el uso de Ping, por lo que se verá incompleto en la página de producción. Tardará en cargar debido al host Render.",
+            "Podrá iniciar con usuario: admin y clave: 123",
           ]}
           logos={[
             "react",
@@ -77,7 +88,8 @@ const ProyectosContainer = () => {
             "tailwind",
             "socketio",
           ]}
-          githubUrl="https://github.com/AnibalPaini/CLON-KUMA"
+          githubUrl="https://github.com/AnibalPaini/Ping-Status"
+          urlProduccion="https://pingstatus.netlify.app/"
         />
         <Proyecto
           titulo="Materos"

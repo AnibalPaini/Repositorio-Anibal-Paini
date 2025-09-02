@@ -12,6 +12,7 @@ const Certificados = () => {
           <Certificado img="/img/React.png" title="ReactJS" />
           <Certificado img="/img/BackEnd.png" title="BackEnd" />
           <Certificado img="/img/BackEnd2.png" title="BackEnd" />
+          <Certificado img="/img/Backend3.png" title="NodeJS" />
         </div>
       </div>
     </section>

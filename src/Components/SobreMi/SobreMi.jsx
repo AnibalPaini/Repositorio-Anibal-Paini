@@ -9,7 +9,7 @@ const SobreMi = () => {
           <p>
             Soy Aníbal Paini, tengo 23 años, argentino y soy desarrollador full stack MERN.
             Actualmente curso el 3° año de la Tecnicatura en Desarrollo de
-            Software. Me apasiona la tecnología y el aprendizaje constante.
+            Software.
           </p>
           <p>
             He trabajado en proyectos personales y colaborativos utilizando
